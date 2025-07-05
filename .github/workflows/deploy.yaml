@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Working dir after action
-        run: actions/checkout@v4
+        run: ls -al
 
   second-job:
     needs: first-job
