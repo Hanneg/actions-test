@@ -11,13 +11,7 @@ jobs:
 
     steps:
       - name: Working dir
-        run: ls -al
-
-      - name: Action
-        uses: actions/checkout@v4
-
-      - name: Working dir after action
-        run: ls -al
+        run: echo "my_variable=Hola Mundo" >> $GITHUB_OUTPUT
 
   second-job:
     needs: first-job
